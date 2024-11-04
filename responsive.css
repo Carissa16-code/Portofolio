@@ -1,0 +1,76 @@
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .grid-3 {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .skills-right ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        position: fixed;
+        width: 20%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: white;
+        border-left: 1px solid black;
+        z-index: 9;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -ms-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+    }
+
+    nav ul {
+        height: 100vh;
+        align-self: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .hero-right {
+        order: -1;
+    }
+
+    .hero-left {
+        text-align: center;
+        padding: 5rem;
+    }
+
+    .hero-left .pre-title {
+        margin: 0 auto;
+    }
+}
